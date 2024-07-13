@@ -45,9 +45,9 @@ class _HomeState extends State<Home> {
   Future getAllNotes() async {
     this.notesList = await NotesDataBase.instance.readAllNotes();
 
-    // setState(() {
-    //   isLoading = false;
-    // });
+    setState(() {
+      isLoading = false;
+    });
   }
 
   Future getOneNote(int id) async {
